@@ -1,0 +1,19 @@
+.primary-background{
+-fx-background-color: #03befc;
+
+}
+
+.side-bar-item{
+
+}
+.side-bar-lable{
+    -fx-text-fill:white;
+}
+.side-bar-item:hover{
+    -fx-background-color: #ffff;
+}
+
+.side-bar-item:hover .side-bar-lable{
+    -fx-text-fill: #03befc;
+}
+

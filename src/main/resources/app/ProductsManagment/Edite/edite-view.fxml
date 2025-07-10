@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" style="-fx-padding: 50;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ProductsManagment.Edite.EditeController">
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-padding: 10;" text="تعديل منتج">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <Label text="الاسم">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="394.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <Label text="السعر">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="priceField" alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="389.0" />
+         </children>
+      </VBox>
+
+      <VBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <Label text="كود الشراء">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codeField" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="392.0" />
+         </children>
+      </VBox>
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#edite" prefHeight="45.0" prefWidth="393.0" text="تعديل">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

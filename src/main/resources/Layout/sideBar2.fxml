@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="sideBar" alignment="TOP_CENTER" prefHeight="638.0" prefWidth="260.0" spacing="20.0" stylesheets="@../style.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Classes.SideBarController">
+            <children>
+      <Button focusTraversable="false" minWidth="200.0" mnemonicParsing="false" onAction="#GoToHome">
+         <graphic>
+            <VBox alignment="CENTER" style="-fx-padding: 10;">
+               <children>
+                              <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../images/prosucts2.png" />
+                                  </image>
+                              </ImageView>
+                  <Label text="الصفحه الرئيسيه">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" minWidth="200.0" mnemonicParsing="false" onAction="#GoToProducts">
+         <graphic>
+            <VBox alignment="CENTER" style="-fx-padding: 10;">
+               <children>
+                              <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../images/products.png" />
+                                  </image>
+                              </ImageView>
+                  <Label text="ادارة المنتجات">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" minWidth="200.0" mnemonicParsing="false" onAction="#GoToSales">
+         <graphic>
+            <VBox alignment="CENTER" style="-fx-padding: 10;">
+               <children>
+                              <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../images/stock.png" />
+                                  </image>
+                              </ImageView>
+                  <Label text="ادارة المبيعات">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </graphic>
+      </Button>
+      <Button focusTraversable="false" minWidth="200.0" mnemonicParsing="false" onAction="#GoToInvoices">
+         <graphic>
+            <VBox alignment="CENTER" style="-fx-padding: 10;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/bill.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="ادارة الفواتير">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </graphic>
+      </Button>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Eng/ Mohamed Saif" textFill="RED">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="17.0" />
+               </font>
+            </Label>
+            <Label text="+201145954371" textFill="#0029ff">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+
+
+            </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+        </VBox>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="sideBar" prefHeight="638.0" prefWidth="260.0" styleClass="primary-background" stylesheets="@../style.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Classes.SideBarController">
+            <children>
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-padding: 10px;" text="اداره المبيعات" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Line endX="160.09288024902344" endY="-107.07621765136719" fill="WHITE" startX="430.5857849121094" startY="-148.01162719726562" stroke="WHITE" strokeWidth="3.0" />
+                <HBox alignment="CENTER" onMouseClicked="#GoToHome" spacing="10.0" style="-fx-padding: 10;" styleClass="side-bar-item">
+                    <children>
+                        <Label styleClass="side-bar-lable" text="الصفحه الرئيسيه" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/prosucts2.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#GoToProducts" spacing="10.0" style="-fx-padding: 10;" styleClass="side-bar-item">
+                    <children>
+                        <Label styleClass="side-bar-lable" text="اداره المنتجات" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/products.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#GoToSales" spacing="10.0" style="-fx-padding: 10;" styleClass="side-bar-item">
+                    <children>
+                        <Label styleClass="side-bar-lable" text="اداره المبيعات" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                            <image>
+                                <Image url="@../images/stock.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0" onMouseClicked="#GoToInvoices" style="-fx-padding: 10;" styleClass="side-bar-item">
+                    <children>
+                        <Label styleClass="side-bar-lable" text="اداره الفواتير" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="71.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/bill.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+
+
+            </children>
+        </VBox>
